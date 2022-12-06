@@ -138,16 +138,16 @@ public class BasicDB extends DB {
 
     if (verbose) {
       StringBuilder sb = getStringBuilder();
-      sb.append("READ ").append(table).append(" ").append(key).append(" [ ");
-      if (fields != null) {
-        for (String f : fields) {
-          sb.append(f).append(" ");
-        }
-      } else {
-        sb.append("<all fields>");
-      }
+      sb.append("READ ").append(key);
+      //if (fields != null) {
+      //  for (String f : fields) {
+      //    sb.append(f).append(" ");
+      //  }
+      //} else {
+      //  sb.append("<all fields>");
+      //}
 
-      sb.append("]");
+      //sb.append("]");
       System.out.println(sb);
     }
 
